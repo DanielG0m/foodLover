@@ -53,7 +53,6 @@ button{
     justify-content: center;
     width: 100%;
     align-items: center;
-    z-index: -1;
 }
 
 .bodyIndex{
@@ -61,9 +60,103 @@ button{
     min-height: 100vh;
 }
 
-.bodyAbout, .bodyMenus{
+.bodyAbout, .bodyMenus, .bodygallery, .enjoyfood, .ourMenu{
     background-color: #18171E;
     min-height: 100vh;
+}
+
+.bodyMenus{
+    width: 100%;
+    position: relative;
+}
+
+.bodygallery{
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.enjoyfood{
+    width: 100%;
+    position: relative;
+}
+
+.ourMenu{
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ourMenu>.imgmenu>.imagesMenu>p,h1{
+    display: flex;
+    justify-content: flex-start;
+    text-align: start;
+    font-size: 20px;
+    width: 400px;
+}
+
+.ourMenu>h2{
+    text-align: center;
+}
+
+.bestmeal{
+    background-color: #18171E;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.bestmeal>.bckcolor>p{
+    width: 100%;
+    margin: 0; 
+    padding: 250px;
+    position: absolute;
+    top: 8%;
+}
+
+.txtmeal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+
+.categorietext{
+    width: 30%;
+}
+
+.imgmenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.imagesMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titlegallery{
+    text-align: center;
+}
+
+.imggallery{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
 }
 
 .nav{
@@ -77,6 +170,7 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 150px;
 }
 
 .imgAndText2{
@@ -88,6 +182,25 @@ button{
 
 .images{
     width: 100%;
+    position: absolute;
+    top: 9%;
+}
+
+.txtfood{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+}
+
+.food{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .all{
@@ -125,3 +238,15 @@ button{
     justify-content: flex-start;
 }
 
+.footer{
+    background-color: var(--color-ternario);
+    padding: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 86.2%;
+    gap: 50px;
+}
