@@ -11,11 +11,11 @@
 }
 
 h1, h2, p, .button{
-    padding: 10px;
+    padding: 5px;
     margin: 25px;
     width: 280px;
+    font-size: 23px;
 }
-
 
 a{
     text-decoration: none;
@@ -27,6 +27,7 @@ a{
 h1{
     color: var(--color-primary);
     font-family: var(--font-family), bold;
+    
 }
 
 h2{
@@ -46,6 +47,7 @@ button{
     color: var(--color-secundary);
     font-family: var(--font-family), bold;
     border: none;
+    cursor: pointer;
 }
 
 #orangewave{
@@ -55,9 +57,26 @@ button{
     align-items: center;
 }
 
+#bread{
+    padding-top: 10%;
+}
+
+#eggs{
+    padding-bottom: 5%;
+    height: 850px;
+}
+
 .bodyIndex{
     background-image: linear-gradient(rgba(52, 51, 58, 0.8), rgba(52, 51, 58, 0.8)), url("../storage/img/placeYourImageHere0.png");
     min-height: 100vh;
+}
+
+.bodyIndex > .imgAndText > .text > h1{
+    font-size: 50px;
+}
+
+.bodyIndex > .imgAndText > .text > p{
+    font-size: 20px;
 }
 
 .bodyAbout, .bodyMenus, .bodygallery, .enjoyfood, .ourMenu{
@@ -94,7 +113,7 @@ button{
     flex-direction: column;
 }
 
-.ourMenu>.imgmenu>.imagesMenu>p,h1{
+.ourMenu>.imgmenu>.imagesMenu>p, h1{
     display: flex;
     justify-content: flex-start;
     text-align: start;
@@ -117,20 +136,20 @@ button{
 .bestmeal>.bckcolor>p{
     width: 100%;
     margin: 0; 
-    padding: 250px;
+    padding: 230px;
     position: absolute;
-    top: 8%;
+    top: 15%;
 }
 
 .txtmeal{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     z-index: 1;
 }
 
 .categorietext{
-    width: 30%;
+    width: 50%;
 }
 
 .imgmenu{
@@ -161,7 +180,7 @@ button{
 
 .nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 30px;
 }
@@ -193,7 +212,7 @@ button{
     align-items: center;
     width: 100%;
     position: absolute;
-    top: 45%;
+    top: 30%;
 }
 
 .food{
@@ -206,12 +225,14 @@ button{
 .all{
     display: flex;
     justify-content: space-between;
+    padding-left: 20%;
 }
 
 .txtimg{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding-top: 15%;
 }
 
 .txtimg2{
@@ -219,6 +240,8 @@ button{
     justify-content: space-between;
     align-items: flex-end;
 }
+
+
 
 .text{
     display: flex;
@@ -249,4 +272,9 @@ button{
     position: absolute;
     top: 86.2%;
     gap: 50px;
+}
+
+
+a:hover{
+    color: var(--color-primary);
 }
